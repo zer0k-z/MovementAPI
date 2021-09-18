@@ -539,7 +539,7 @@ static void NobugLandingOrigin(int client, float landingOrigin[3])
 	else
 	{
 		// NOTE: Use gF_OldVelocity and gF_OldOrigin if jump is potentially bugged.
-		gF_LandingVelocity[client] = gF_OldVelocity[client];
+		gF_LandingVelocity[client] = gF_PostAAVelocity[client];
 		velocity = gF_PostAAVelocity[client];
 		origin = gF_PostAAOrigin[client];
 	}
